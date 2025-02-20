@@ -317,9 +317,10 @@
     justify-content: center;
     align-items: center;
     background-size: 100% 100%;
-    img {
-      animation: spinAnimaiton 6s linear infinite;
-    }
+    // :TODO:
+    // img {
+    //   animation: spinAnimaiton 6s linear infinite;
+    // }
     @media (max-width: 991px) {
       height: 360px;
       width: 360px;
@@ -330,7 +331,7 @@
     font-size: 36px;
     font-weight: 400;
     color: #fff;
-    margin: 5px 0 0;
+    // margin: 5px 0 0;
     @media (max-width: 991px) {
       font-size: 32px;
     }

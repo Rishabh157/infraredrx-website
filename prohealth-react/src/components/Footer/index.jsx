@@ -22,21 +22,37 @@ const menuDataTwo = [
 
 export default function Footer() {
   return (
-    <footer className="cs_footer cs_style_1 cs_heading_color">
+    <footer id='contact' className="cs_footer cs_style_1 cs_heading_color">
       <div
         className="cs_footer_logo_wrap"
         style={{ backgroundImage: 'url(/images/footer_bg_1.svg)' }}
       >
         <div
           className="cs_footer_brand"
-          style={{ backgroundImage: 'url(/images/footer_logo_bg.svg)' }}
+          style={{ backgroundImage: 'url(/images/footer_logo_bg.png)' }}
         >
-          <img
-            src="/images/logo_icon.svg"
+          {/* <img
+            // src="/Infrared-RX.png"
+            src="/images/logo_icon.svg" // :TODO:
             alt="Logo Icon"
-            className="cs_footer_brand_icon"
-          />
-          <h2 className="cs_footer_brand_text">ProHealth</h2>
+            // className="cs_footer_brand_icon"
+            height={140}
+            width={140}
+          /> */}
+          <h2 className="cs_footer_brand_text">
+
+            <span style={{
+              fontSize: '22px'
+            }}>INFRARED<sup>RX</sup></span>
+            {/* <img
+              src="/Infrared-RX.png"
+              // src="/images/logo_icon.svg" // :TODO:
+              alt="Logo Icon"
+              // className="cs_footer_brand_icon"
+              height={200}
+              width={200}
+            /> */}
+          </h2>
         </div>
       </div>
       <div className="cs_footer_main">
@@ -44,7 +60,7 @@ export default function Footer() {
           <div className="row">
             <div className="col-lg-4">
               <div className="cs_footer_item">
-                <TextWidget text="ProHealth Medical & <br />Healthcare Center" />
+                <TextWidget text="INFRARED<sup>RX</sup>" />
                 <ContactInfoWidget />
               </div>
             </div>
@@ -69,12 +85,14 @@ export default function Footer() {
           </div>
         </div>
       </div>
-      <div className="cs_footer_bottom cs_accent_bg">
+      {/* cs_accent_bg :TODO: */}
+      <div className="cs_footer_bottom ">
         <div className="container">
           <div className="cs_footer_bottom_in">
             <SocialWidget />
             <div className="cs_copyright">
-              Copyright © 2024 Pro Health. All rights reserved.
+              Copyright © 2025 InfraRed <sup>RX</sup>. All rights reserved.
+              {/* Copyright © 2025 INFRA <span className='cs_accent_color'>RED</span> <sup>RX</sup> Health. All rights reserved. */}
             </div>
           </div>
         </div>

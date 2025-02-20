@@ -11,15 +11,20 @@ export default function DepartmentSectionStyle1({
   return (
     <div className="container">
       <div className="row">
-        <div className="col-md-6 col-xl-4">
-          <SectionHeading title={sectionTitle} titleUp={sectionTitleUp} />
-          <Spacing md="72" lg="50" />
+        <SectionHeading
+          title={sectionTitle}
+          titleUp={sectionTitleUp}
+        />
+        <Spacing md="72" lg="50" />
+
+        <div className="row cs_gap_y_30">
+          {data?.map((item, index) => (
+            <div className="col-md-6 col-xl-4" key={index}>
+              <IconBoxStyle4 {...item} />
+            </div>
+          ))}
         </div>
-        {data?.map((item, index) => (
-          <div className="col-md-6 col-xl-4" key={index}>
-            <IconBoxStyle4 {...item} />
-          </div>
-        ))}
+
       </div>
     </div>
   );

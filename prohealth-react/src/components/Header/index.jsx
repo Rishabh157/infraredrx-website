@@ -28,9 +28,8 @@ export default function Header({ logoSrc, variant }) {
   return (
     <>
       <header
-        className={`cs_site_header cs_style1 cs_sticky_header ${
-          mobileToggle ? 'cs_mobile_toggle_active' : ''
-        } ${variant} ${isSticky ? 'cs_active_sticky' : ''}`}
+        className={`cs_site_header cs_style1 cs_sticky_header ${mobileToggle ? 'cs_mobile_toggle_active' : ''
+          } ${variant} ${isSticky ? 'cs_active_sticky' : ''}`}
       >
         <div className="cs_main_header">
           <div className="container">
@@ -40,79 +39,25 @@ export default function Header({ logoSrc, variant }) {
                   <img src={logoSrc} alt="Logo" height={200} width={200} />
                 </Link>
                 <nav className="cs_nav">
-                  <ul
-                    className={`${
-                      mobileToggle ? 'cs_nav_list cs_active' : 'cs_nav_list'
-                    }`}
-                  >
-                    <li className="menu-item-has-children">
-                      <Link to="/">Home</Link>
-                      <DropDown>
-                        <ul>
-                          <li>
-                            <Link to="/">Home Version-1</Link>
-                          </li>
-                          <li>
-                            <Link to="/home-v2">Home Version-2</Link>
-                          </li>
-                          <li>
-                            <Link to="/home-v3">Home Version-3</Link>
-                          </li>
-                          <li>
-                            <Link to="/home-v4">Home Version-4</Link>
-                          </li>
-                          <li>
-                            <Link to="/home-v5">Home Version-5</Link>
-                          </li>
-                        </ul>
-                      </DropDown>
+                  <ul className={`${mobileToggle ? 'cs_nav_list cs_active' : 'cs_nav_list'}`}>
+                    <li>
+                      {/* <Link to="/">Home</Link> */}
+                      <a href="#home">Home</a>
                     </li>
                     <li>
-                      <Link to="/about">About</Link>
+                      <a href="#about">About</a>
                     </li>
                     <li>
-                      <Link to="/doctors">Find Doctor</Link>
+                      <a href="#product">Products</a>
                     </li>
                     <li>
-                      <Link to="/blog">Blog</Link>
-                    </li>
-                    <li className="menu-item-has-children">
-                      <Link to="/">Pages</Link>
-                      <DropDown>
-                        <ul>
-                          <li>
-                            <Link to="/appointments">Appointments</Link>
-                          </li>
-                          <li>
-                            <Link to="/departments">Departments</Link>
-                          </li>
-                          <li>
-                            <Link to="/departments/department-details">
-                              Department Details
-                            </Link>
-                          </li>
-                          <li>
-                            <Link to="/doctors">Doctors</Link>
-                          </li>
-                          <li>
-                            <Link to="doctors/doctor-details">
-                              Doctor Details
-                            </Link>
-                          </li>
-                          <li>
-                            <Link to="/pricing-plan">Pricing Plan</Link>
-                          </li>
-                          <li>
-                            <Link to="/gallery">Gallery</Link>
-                          </li>
-                          <li>
-                            <Link to="/timetable">Timetable</Link>
-                          </li>
-                        </ul>
-                      </DropDown>
+                      <a href="#experts">Our Experts</a>
                     </li>
                     <li>
-                      <Link to="/contact">Contact</Link>
+                      <a href="#blog">Blog</a>
+                    </li>
+                    <li>
+                      <a href="#contact">Contact</a>
                     </li>
                   </ul>
                   <span
@@ -133,6 +78,9 @@ export default function Header({ logoSrc, variant }) {
                     className="cs_toolbox_btn cs_search_toggle_btn"
                     type="button"
                     onClick={() => setSearchToggle(!searchToggle)}
+                    style={{
+                      display: 'none'
+                    }}
                   >
                     <svg
                       width={30}
@@ -193,10 +141,11 @@ export default function Header({ logoSrc, variant }) {
             <img src="/images/icons/close.svg" alt="Close" />
           </button>
           <div className="cs_logo_box">
-            <img src="/images/logo.svg" alt="Logo" />
+            {/* <img src="/images/logo.svg" alt="Logo" /> */}
+            <img src="/Infrared-RX.png" height={200} width={200} alt="Logo" />
             <div className="cs_height_15" />
             <h3 className="cs_fs_24 cs_semibold mb-0">
-              Your Partner in Health and Wellness
+              Your Bio Tech Partner in Health and Wellness
             </h3>
           </div>
           <Spacing md="35" lg="35" xl="35" />

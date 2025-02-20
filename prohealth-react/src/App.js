@@ -33,7 +33,11 @@ function App() {
   }, [pathname]);
   return (
     <Routes>
-      <Route path="/" element={<Layout />}>
+
+      <Route path="/" 
+      // element={<Layout2 />}
+      element={<Layout />}
+      >
         <Route index element={<Home />} />
         <Route path="about" element={<About />} />
         <Route path="doctors" element={<Doctors />} />
@@ -51,19 +55,24 @@ function App() {
         <Route path="timetable" element={<Timetable />} />
         <Route path="contact" element={<Contact />} />
       </Route>
+
       <Route element={<Layout2 />}>
         <Route path="home-v2" element={<HomeStyle2 />} />
         <Route path="home-v6" element={<HomeStyle6 />} />
       </Route>
+
       <Route path="home-v3" element={<Layout3 />}>
         <Route index element={<HomeStyle3 />} />
       </Route>
+
       <Route path="home-v4" element={<Layout4 />}>
         <Route index element={<HomeStyle4 />} />
       </Route>
+
       <Route path="home-v5" element={<Layout5 />}>
         <Route index element={<HomeStyle5 />} />
       </Route>
+      
       <Route path="*" element={<ErrorPage />} />
     </Routes>
   );
