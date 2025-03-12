@@ -28,6 +28,7 @@ export default function TestimonialCarouselStyle3Mito({ data }) {
   return (
     <div className="cs_testimonial_carousel_2 cs_gap_20">
       <div className="cs_slider_navigation cs_style_1">
+
         <div
           className="cs_slider_prev cs_center cs_shadow_2"
           onClick={previous}
@@ -40,13 +41,9 @@ export default function TestimonialCarouselStyle3Mito({ data }) {
       </div>
 
       <div
-        className="cs_height_140 cs_height_lg_60" />
-      {/* <div
-        className="cs_height_140 cs_height_lg_60" style={{
-          background: 'url(/images/mac-device.png)',
-          backgroundSize: 'cover',
-        }} /> */}
-      <Slider ref={sliderRef} {...settings} className="cs_slider_activate">
+        className="cs_height_102 cs_height_lg_60" />
+      
+      <Slider ref={sliderRef} {...settings} className=""> {/* missing class => cs_slider_activate */}
         {data?.map((item, index) => (
           <div className="cs_slide" key={index}>
             < TestimonialStyle4 {...item} />

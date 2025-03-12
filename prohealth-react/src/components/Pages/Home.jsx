@@ -20,6 +20,7 @@ import MitoSoftwareSectionStyle from '../Section/TeamSection/MitoSoftwareSection
 import HowItWorksSoftwareSectionStyle from '../Section/TeamSection/HowItWorksSoftwareSectionStyle';
 import TestimonialSectionStyle4 from '../Section/TestimonialSection/TestimonialSectionStyle4';
 import MitoSoftTestimonialSectionStyle from '../Section/TestimonialSection/MitoSoftTestimonialSectionStyle';
+import TeamSection from '../Section/TeamSection';
 
 const featureListData = [
   {
@@ -53,44 +54,41 @@ const featureListData = [
   },
 ];
 const brandData = [
-  { imgUrl: 'https://prohealth-react.vercel.app/images/brand_1.png', imgAlt: 'Brand' },
-  // { imgUrl: 'images/brand_1.png', imgAlt: 'Brand' },
-  { imgUrl: 'https://prohealth-react.vercel.app/images/brand_2.png', imgAlt: 'Brand' },
-  { imgUrl: 'https://prohealth-react.vercel.app/images/brand_4.png', imgAlt: 'Brand' },
-  { imgUrl: 'https://prohealth-react.vercel.app/images/brand_5.png', imgAlt: 'Brand' },
-  { imgUrl: 'https://prohealth-react.vercel.app/images/brand_6.png', imgAlt: 'Brand' },
-  { imgUrl: 'https://prohealth-react.vercel.app/images/brand_8.png', imgAlt: 'Brand' },
-  { imgUrl: 'https://prohealth-react.vercel.app/images/brand_6.png', imgAlt: 'Brand' },
-  { imgUrl: 'https://prohealth-react.vercel.app/images/brand_6.png', imgAlt: 'Brand' },
+  // { imgUrl: 'https://prohealth-react.vercel.app/images/brand_1.png', imgAlt: 'Brand' },
+  { imgUrl: 'https://static.wixstatic.com/media/8cb6b4_20fe4ed261da4539a580282c404f6bbf~mv2.png/v1/fill/w_283,h_84,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/8cb6b4_20fe4ed261da4539a580282c404f6bbf~mv2.png', imgAlt: 'Brand' },
+  { imgUrl: 'https://media.licdn.com/dms/image/v2/D4E22AQFIB9cJce13KA/feedshare-shrink_800/feedshare-shrink_800/0/1724795836462?e=2147483647&v=beta&t=f1hbFg0YgsGZTLma9aN3vGkE_nPH1VUU_644lwM8MxM', imgAlt: 'Brand' },
+  { imgUrl: 'https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/0b/14/66/0b14666e-700e-0d98-fd4a-aa9cd8ab639b/AppIcon-0-1x_U007emarketing-0-7-0-85-220.png/230x0w.webp', imgAlt: 'Brand' },
+  { imgUrl: 'https://den.mercer.edu/wp-content/uploads/2018/03/gra.png', imgAlt: 'Brand' },
+  { imgUrl: 'https://www.poctrn.org/documents/461099/0/Umass+Medical.jpg/6485392a-0d5a-d1de-1c1b-f791bdafaad3?t=1548966542026', imgAlt: 'Brand' },
+  // { imgUrl: 'https://farragut.com/wp-content/uploads/2023/04/far.png', imgAlt: 'Brand' },
+  { imgUrl: 'https://www.nih.gov/sites/all/themes/nih/images/nih-logo-color.png', imgAlt: 'Brand' },
+  { imgUrl: 'https://image.pitchbook.com/itRYwZfCR6fvz2SspBlzI0HpHCr1640068869369_200x200', imgAlt: 'Brand' },
+  { imgUrl: 'https://media.licdn.com/dms/image/v2/C5622AQHEaxpTjNHyvA/feedshare-shrink_800/feedshare-shrink_800/0/1654085014074?e=2147483647&v=beta&t=yHts9auH7UXpO6wnsuIHbIw4ZjRfR4wm2Q57I7hvKUo', imgAlt: 'Brand' },
 ];
 
 const faqData = [
   {
-    title: 'What services does ProHealth offer?',
+    title: 'How would this test fit into clinical practice? ',
     content:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
+      'The FLOW test can simply replace the less accurate ankle-brachial index test performed in Vascular clinics.  It can also be deployed in primary care offices, community health clinics, and even mobile health outreach vehicles.  A positive test warrants consideration of lifestyle changes to reduce the development of cardiovascular disease.  Positive results may also justify more expensive and invasive diagnostic testing.',
   },
   {
-    title: 'How do I schedule an appointment with ProHealth?',
+    title: 'What is the ideal patient to test?',
     content:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
+      'For the FLOW test, it would be a patient with suspected PAD.  This includes patients with risks factors for PAD such as early aging (>50 years old), history of smoking, and history of diabetes.  It also includes patients with symptoms consistent with mild intermittent claudication.',
   },
   {
-    title: 'Do you accept insurance?',
+    title: 'What is your mission?',
     content:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
+      'Infrared RX’s mission is to discover, develop and deliver improved measures of skeletal muscle blood flow and mitochondrial function for use in bettering patient health.',
   },
   {
-    title: 'What should I bring to my appointment?',
+    title: 'What does your company do?',
     content:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
-  },
-  {
-    title: 'How do I request a prescription refill?',
-    content:
-      'At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesent voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui.',
-  },
+      'We translate knowledge and technology into commercially viable hardware and software—products can be of use to other researchers and to clinicians in trying to understand how mitochondria in the muscle can be affected in different diseases.',
+  }
 ];
+
 const blogData = [
   {
     title: 'The Benefits of Mindfulness Meditation for Stress and Anxiety',
@@ -402,7 +400,7 @@ export default function Home() {
           // imgUrl="/images/home_3/about.png"
           spiningImgUrl="/images/home_1/about_mini.svg"
           titleUp="ABOUT US"
-          title="ProHealth is a team of experienced medical professionals"
+          title="Infraredrx is a team of experienced medical professionals"
           subTitle="Dedicated to providing top-quality healthcare services. We believe in a <br /> holistic approach to healthcare that focuses on treating the whole <br />person, not just the illness or symptoms."
         />
       </Section>
@@ -445,28 +443,27 @@ export default function Home() {
 
 
       <Section
-        id='product'
-        topMd={190}
-        topLg={150}
-        topXl={105}
-        bottomMd={200}
-        bottomLg={150}
-        bottomXl={110}
+      // id='product'
+      // topMd={190}
+      // topLg={150}
+      // topXl={105}
+      // bottomMd={200}
+      // bottomLg={150}
+      // bottomXl={110}
       >
+
         <MitoSoftTestimonialSectionStyle
           sectionTitle="MITOLAB"
           sectionTitleUp="SOFTWARE"
-          avatarListTitle="This advanced analytical tool helps researchers process biosensor-generated data with precision. Using proven methodologies, it ensures accurate insights for analyzing mitochondrial function, crucial for understanding metabolic disorders and neurodegenerative diseases.
-It seamlessly integrates with biosensor devices, transforming raw data into meaningful insights using advanced algorithms. The tool handles large datasets efficiently, enabling trend analysis, anomaly detection, and biomarker identification.
-With an intuitive interface featuring interactive graphs and automated reporting, researchers can easily interpret complex data. Ideal for clinical research, pharmaceuticals, and personalized medicine, it bridges the gap between raw sensor readings and actionable scientific knowledge, driving medical advancements."
-          // avatarList={[
-          //   { imgUrl: '/images/home_4/avatar_1.png' },
-          //   { imgUrl: '/images/home_4/avatar_2.png' },
-          //   { imgUrl: '/images/home_4/avatar_3.png' },
-          //   { imgUrl: '/images/home_4/avatar_4.png' },
-          //   { imgUrl: '/images/home_4/avatar_5.png' },
-          // ]}
+          avatarListTitle="Shine a light and learn what powers your muscles."
           data={testimonialData}
+        // avatarList={[
+        //   { imgUrl: '/images/home_4/avatar_1.png' },
+        //   { imgUrl: '/images/home_4/avatar_2.png' },
+        //   { imgUrl: '/images/home_4/avatar_3.png' },
+        //   { imgUrl: '/images/home_4/avatar_4.png' },
+        //   { imgUrl: '/images/home_4/avatar_5.png' },
+        // ]}
         />
       </Section>
 
@@ -494,35 +491,26 @@ With an intuitive interface featuring interactive graphs and automated reporting
 
 
       <Section
-      // topMd={190}
-      // topLg={150}
-      // topXl={105}
-      // // bottomMd={200}
-      // bottomLg={150}
-      // bottomXl={110}
+        topMd={190}
+        topLg={150}
+        topXl={105}
+        // bottomMd={200}
+        bottomLg={150}
+        bottomXl={110}
       >
         <MitoSoftTestimonialSectionStyle
           sectionTitle="FLOW DIAGNOSTIC TEST"
           sectionTitleUp="SOFTWARE"
-          avatarListTitle="This advanced analytical tool helps researchers process biosensor-generated data with precision. Using proven methodologies, it ensures accurate insights for analyzing mitochondrial function, crucial for understanding metabolic disorders and neurodegenerative diseases.
-It seamlessly integrates with biosensor devices, transforming raw data into meaningful insights using advanced algorithms. The tool handles large datasets efficiently, enabling trend analysis, anomaly detection, and biomarker identification.
-With an intuitive interface featuring interactive graphs and automated reporting, researchers can easily interpret complex data. Ideal for clinical research, pharmaceuticals, and personalized medicine, it bridges the gap between raw sensor readings and actionable scientific knowledge, driving medical advancements."
+          avatarListTitle="Flow Diagnostics Test: Description and its unique features.
+                Measure the health of your circulation without invasive tests.
+                Predict the future of your vascular health.
+                Act to protect your blood vessels from the effects of aging or diabetes."
           data={testimonialData}
         />
       </Section>
 
-      {/* <div style={{
-        height: '100vh',
-        width: '100%',
-        background: '#fefefe',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center'
-      }} >
-        <h1>HOW IT WORKS</h1>
-      </div> */}
 
-
+      {/* Start How It Works Section */}
       <Section topMd={195} topLg={145} topXl={105}>
         <HowItWorksSoftwareSectionStyle
           sectionTitle="HOW IT WORKS"
@@ -530,22 +518,74 @@ With an intuitive interface featuring interactive graphs and automated reporting
           data={departmentData}
         />
       </Section>
+      {/* End How It Works Section */}
 
-
-      <Section id='experts' topMd={195} topLg={145} topXl={105}>
-        <TeamSectionStyle4
+      {/* Start Experts Section */}
+      <Section id='experts' topMd={190} topLg={145} topXl={105}>
+        <TeamSection
           sectionTitle="Experts Researcher"
           sectionTitleUp="MEET OUR"
-          data={teamData}
+          data={[
+            {
+              // imgUrl: 'https://prohealth-react.vercel.app/images/about/doctor_2.png',
+              imgUrl: 'images/doctor_1.png',
+              // imgUrl: 'images/about/doctor_1.png',
+              name: 'Dr. Jonathan Murrow',
+              designation: 'Chief Executive Officer',
+              description:
+                'With expertise in managing complex heart conditions and performing advanced cardiac procedures',
+              social: [
+                { icon: 'fa6-brands:facebook-f', href: '/about' },
+                { icon: 'fa6-brands:linkedin-in', href: '/about' },
+                { icon: 'fa6-brands:twitter', href: '/about' },
+              ],
+            },
+            {
+              // imgUrl: 'https://prohealth-react.vercel.app/images/about/doctor_3.png',
+              // imgUrl: 'https://media.licdn.com/dms/image/v2/D5635AQEimBzOMec5Og/profile-framedphoto-shrink_200_200/profile-framedphoto-shrink_200_200/0/1721628102358?e=1740722400&v=beta&t=JXxNE1X0_m3vcD7ZQWwxHGhhXYiLNXNtX6pjBrdJmLI',
+              imgUrl: 'images/doctor_2.png',
+              name: 'Dr. Kevin McCully',
+              designation: 'President and Cheif Scientist',
+              description:
+                'With expertise in treating acute illnesses and injuries in medicine physician',
+              social: [
+                { icon: 'fa6-brands:facebook-f', href: '/about' },
+                { icon: 'fa6-brands:linkedin-in', href: '/about' },
+                { icon: 'fa6-brands:twitter', href: '/about' },
+              ],
+            },
+            {
+              // imgUrl: 'https://prohealth-react.vercel.app/images/about/doctor_3.png',
+              imgUrl: 'images/doctor_3.jpg',
+              name: 'Dr. Kent Nilsson',
+              designation: 'Chief Medical Officer',
+              description:
+                'With experience in managing complex medical conditions in children',
+              social: [
+                { icon: 'fa6-brands:facebook-f', href: '/about' },
+                { icon: 'fa6-brands:linkedin-in', href: '/about' },
+                { icon: 'fa6-brands:twitter', href: '/about' },
+              ],
+            },
+            {
+              // imgUrl: 'https://prohealth-react.vercel.app/images/about/doctor_3.png',
+              imgUrl: 'images/doctor_4.png',
+              name: 'Abheeraj Jain',
+              designation: 'Lead Developer',
+              description: 'With experience in managing complex medical conditions in children',
+              social: [
+                { icon: 'fa6-brands:facebook-f', href: '/about' },
+                { icon: 'fa6-brands:linkedin-in', href: '/about' },
+                { icon: 'fa6-brands:twitter', href: '/about' },
+              ],
+            },
+          ]}
         />
       </Section>
+      {/* End Experts Section */}
 
-      {/* Start Award Section */}
-      {/* <Section topMd={185} topLg={140} topXl={100}>
-        <AwardSection sectionTitle="Departments" data={awardData} />
-      </Section> */}
-      {/* End Award Section */}
-      {/* Start Testimonial */}
+
+      {/* Start Review Section */}
       <Section
         topMd={185}
         topLg={140}
@@ -559,17 +599,9 @@ With an intuitive interface featuring interactive graphs and automated reporting
           sectionTitleDown="Of our clients"
         />
       </Section>
-      {/* End Testimonial */}
-      {/* Start Banner Section */}
-      {/* <Section>
-        <Banner
-          bgUrl="images/home_1/cta_bg.svg"
-          imgUrl="images/home_1/cta_img.png"
-          title="Don’t Let Your Health Take a Backseat!"
-          subTitle="Schedule an appointment with one of our experienced medical professionals today!"
-        />
-      </Section> */}
-      {/* End Banner Section */}
+      {/* End Review Section */}
+
+
       {/* Start Blog Section */}
       <Section id='blog' topMd={190} topLg={145} topXl={105}>
         <BlogSection
@@ -579,15 +611,7 @@ With an intuitive interface featuring interactive graphs and automated reporting
         />
       </Section>
       {/* End Blog Section */}
-      {/* Start Appointment Section */}
-      {/* <Section topMd={190} topLg={145} topXl={105} id="appointment">
-        <AppointmentSection
-          sectionTitle="Appointment"
-          sectionTitleUp="BOOK AN"
-          imgUrl="/images/home_1/appointment.jpeg"
-        />
-      </Section> */}
-      {/* End Appointment Section */}
+
       {/* Start FAQ Section */}
       <Section topMd={190} topLg={145} topXl={105}>
         <FaqSection
@@ -597,6 +621,7 @@ With an intuitive interface featuring interactive graphs and automated reporting
         />
       </Section>
       {/* End FAQ Section */}
+
       {/* Start Brand Section */}
       <Section
         topMd={200}
@@ -609,6 +634,7 @@ With an intuitive interface featuring interactive graphs and automated reporting
         <BrandsSection data={brandData} />
       </Section>
       {/* End Brand Section */}
+
     </>
   );
 }

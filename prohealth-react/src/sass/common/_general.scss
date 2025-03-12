@@ -3064,9 +3064,9 @@ a.ui-button:active,
 .cs_section_wrap_1 {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  // justify-content: space-between;
   height: 100%;
-  gap: 50px;
+  // gap: 50px;
 
   @media (max-width: 991px) {
     .cs_avatar_card {

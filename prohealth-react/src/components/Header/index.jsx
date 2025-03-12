@@ -153,19 +153,19 @@ export default function Header({ logoSrc, variant }) {
           <Spacing md="35" lg="50" xl="35" />
           <IconBoxStyle11
             title="Phone"
-            subTitle="123-456-7890"
+            subTitle="+1 (706) 254 0409"
             iconSrc="/images/contact/icon_1.svg"
           />
           <Spacing md="30" lg="30" xl="30" />
           <IconBoxStyle11
             title="Email"
-            subTitle="hellocallcenter@gmail.com"
+            subTitle="raj@infraredrx.com"
             iconSrc="/images/contact/icon_2.svg"
           />
           <Spacing md="30" lg="30" xl="30" />
           <IconBoxStyle11
             title="Location"
-            subTitle="123 Anywhere St., Any City, 12345"
+            subTitle="Atlanta GA, USA"
             iconSrc="/images/contact/icon_3.svg"
           />
           <Spacing md="60" lg="60" xl="60" />

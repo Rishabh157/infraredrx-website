@@ -25,7 +25,7 @@ export default function HowItWorksSoftwareSectionStyle({
             // src="/images/device-work-1.png"
             // src="/images/device-work.png"
             alt="How our software works"
-            // style={{ height: "auto", maxWidth: "70%", display: 'flex', justifyContent: 'center', textAlign: 'center' }}
+            style={{ height: "auto", maxWidth: "120%" }}
           />
 
 
